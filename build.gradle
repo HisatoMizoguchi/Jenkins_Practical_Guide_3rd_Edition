@@ -48,6 +48,6 @@ war {
     archiveBaseName = project.ext.artifactId
 }
 
-task wrapper(type: Wrapper) {
+wrapper(type: Wrapper) {
     gradleVersion = '9.1.0'
 }
