@@ -5,9 +5,10 @@ plugins {
     id 'war'
 }
 
-compileOptions {
-    sourceCompatibility JavaVersion.VERSION_17
-    targetCompatibility JavaVersion.VERSION_17
+java {
+    toolchain {
+       languageVersion = JavaLanguageVersion.of(17)
+     }
 }
 
 group = 'jp.gihyo.jenkinsbook'
